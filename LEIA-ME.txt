@@ -1,0 +1,24 @@
+VERSÃO PARA O EDITOR P5.JS
+
+1. Extraia o ZIP no computador.
+2. Substitua TODO o conteúdo de index.html pelo index.html deste pacote.
+3. Substitua TODO o conteúdo de style.css pelo style.css deste pacote.
+4. Substitua TODO o conteúdo de sketch.js pelo sketch.js deste pacote.
+5. Mantenha a pasta imagens com convite.png e fundo.png. Se já enviou as
+   imagens anteriores, pode continuar usando-as: são as mesmas.
+6. Aperte Play e clique/toque no lacre central E | G.
+
+O lacre sai, as duas folhas abrem ao longo de cerca de 3 segundos e sobra
+somente o convite. Abaixo estão os detalhes e os links do Casar.com.
+A abertura começa com o toque, não automaticamente.
+O botão "Ver a abertura novamente" restaura o convite fechado.
+
+Não cole o novo código junto ao antigo: substitua o conteúdo inteiro.
+O HTML já chama sketch.js, e o JavaScript aguarda o HTML estar pronto.
+Não há necessidade de biblioteca p5 para esta animação HTML/CSS.
+Se o sistema estiver configurado para reduzir animações, a abertura é imediata.
+
+Os botões levam a https://noivos.casar.com/caliariheck/.
+
+FLORES: envie também imagens/flores-lacre.png para a pasta imagens.
+O raminho aparece atrás do lacre e sai junto com ele.
