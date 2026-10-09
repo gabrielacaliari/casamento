@@ -20,6 +20,11 @@ function iniciarConvite() {
   const acoes = document.getElementById('acoes');
   const instrucao = document.getElementById('instrucao');
 
+  // Conteúdo que aparece depois da abertura.
+  const conteudoInferior = document.querySelectorAll(
+    '.informacoes, .site, footer'
+  );
+
   const esquerda = envelope?.querySelector('.vegetal-esquerdo');
   const direita = envelope?.querySelector('.vegetal-direito');
   const flores = envelope?.querySelector('.flores-lacre');
@@ -40,6 +45,12 @@ function iniciarConvite() {
 
   let estado = 'fechado';
   let quadroAnimacao = null;
+
+  function mostrarConteudoInferior(mostrar) {
+    conteudoInferior.forEach(elemento => {
+      elemento.hidden = !mostrar;
+    });
+  }
 
   function aplicarEstilo(elemento, propriedade, valor) {
     if (!elemento) return;
@@ -149,6 +160,9 @@ function iniciarConvite() {
 
     envelope.classList.remove('abrindo', 'aberto');
 
+    // Mantém as informações escondidas durante a animação.
+    mostrarConteudoInferior(false);
+
     if (instrucao) {
       instrucao.textContent = 'Este convite é para você.';
     }
@@ -171,6 +185,9 @@ function iniciarConvite() {
 
       quadroAnimacao = null;
       estado = 'aberto';
+
+      // Mostra as informações somente após terminar a abertura.
+      mostrarConteudoInferior(true);
 
       if (acoes) {
         acoes.hidden = false;
@@ -198,6 +215,9 @@ function iniciarConvite() {
     }
 
     estado = 'fechado';
+
+    // Esconde novamente as informações e o rodapé.
+    mostrarConteudoInferior(false);
 
     envelope.classList.remove('abrindo', 'aberto');
 
