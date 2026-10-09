@@ -4,57 +4,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f1e8">
+
   <title>Gabriela & Erif</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="sketch.js" defer></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Handlee&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Rouge+Script&family=Short+Stack&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Handlee&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Rouge+Script&family=Short+Stack&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
-  <header class="cabecalho"><a href="#inicio">G <span>&</span> E</a><span>19 · 12 · 2026</span></header>
+  <header class="cabecalho">
+    <a href="#inicio">G <span>&</span> E</a>
+    <span>19 · 12 · 2026</span>
+  </header>
+
   <main>
-    <section class="abertura" id="inicio" aria-label="Convite de casamento">
+    <section
+      class="abertura"
+      id="inicio"
+      aria-label="Convite de casamento"
+    >
       <p class="sobretitulo">UM CONVITE PARA VOCÊ</p>
-      <h1>Um novo capítulo.<br><em>Com você por perto.</em></h1>
-      <p id="instrucao" class="instrucao" aria-live="polite">Toque no lacre para abrir nosso convite.</p>
+
+      <h1>
+        Um novo capítulo.<br>
+        <em>Com você por perto.</em>
+      </h1>
+
+      <p id="instrucao" class="instrucao" aria-live="polite">
+        Toque no lacre para abrir nosso convite.
+      </p>
+
       <div class="perspectiva">
         <div class="envelope" id="envelope">
-          <img class="convite" src="4.png" alt="Convite de Gabriela Caliári Godoy e Erif Heck Giembinsky. Casamento em 19 de dezembro de 2026, das 11h às 15h, no Espaço Tangerina, Rua Aguapeí, 4037, Chácaras Califórnia, Araçatuba – SP. Dois continentes. Um oceano. Dois mundos que se tornam um só.">
-          <div class="vegetal vegetal-esquerdo" aria-hidden="true"></div>
-          <div class="vegetal vegetal-direito" aria-hidden="true"></div>
-          <img class="flores-lacre" src="flor.png" alt="" aria-hidden="true">
-          <button class="lacre" id="abrir" aria-label="Abrir convite" aria-expanded="false" aria-controls="informacoes"><span>E <i>|</i> G</span></button>
+          <img
+            class="convite"
+            src="4.png"
+            alt="Convite de Gabriela Caliári Godoy e Erif Heck Giembinsky. Casamento em 19 de dezembro de 2026, das 11h às 15h, no Espaço Tangerina, Rua Aguapeí, 4037, Chácaras Califórnia, Araçatuba – SP. Dois continentes. Um oceano. Dois mundos que se tornam um só."
+          >
+
+          <div
+            class="vegetal vegetal-esquerdo"
+            aria-hidden="true"
+          ></div>
+
+          <div
+            class="vegetal vegetal-direito"
+            aria-hidden="true"
+          ></div>
+
+          <img
+            class="flores-lacre"
+            src="flor.png"
+            alt=""
+            aria-hidden="true"
+          >
+
+          <button
+            type="button"
+            class="lacre"
+            id="abrir"
+            aria-label="Abrir convite"
+            aria-expanded="false"
+            aria-controls="informacoes site-casal rodape"
+          >
+            <span>E <i>|</i> G</span>
+          </button>
         </div>
       </div>
+
       <div class="acoes-convite" id="acoes" hidden>
-        <a class="descer" href="#informacoes">Conheça os detalhes <span>↓</span></a>
-        <button id="repetir" class="texto-botao">Ver a abertura novamente</button>
+        <a class="descer" href="#informacoes">
+          Conheça os detalhes
+          <span>↓</span>
+        </a>
+
+        <button
+          type="button"
+          id="repetir"
+          class="texto-botao"
+        >
+          Ver a abertura novamente
+        </button>
       </div>
-      <noscript><p>Para ver a animação, ative o JavaScript. As informações do casamento estão abaixo.</p></noscript>
+
+      <noscript>
+        <p>
+          Ative o JavaScript para abrir o convite ou
+          <a href="https://noivos.casar.com/caliariheck/">
+            acesse nosso site.
+          </a>
+        </p>
+      </noscript>
     </section>
-    <section class="informacoes" id="informacoes" aria-labelledby="titulo-detalhes">
+
+    <section
+      class="informacoes"
+      id="informacoes"
+      aria-labelledby="titulo-detalhes"
+      hidden
+    >
       <p class="sobretitulo">DOIS CONTINENTES. UM OCEANO.</p>
-      <h2 id="titulo-detalhes">Dois mundos que se tornam um só.</h2>
-      <p class="introducao">Estamos contando os dias para celebrar com as pessoas que fazem parte da nossa história. Será uma alegria ter você conosco!</p>
+
+      <h2 id="titulo-detalhes">
+        Dois mundos que se tornam um só.
+      </h2>
+
+      <p class="introducao">
+        Estamos contando os dias para celebrar com as pessoas que
+        fazem parte da nossa história. Será uma alegria ter você conosco!
+      </p>
+
       <div class="detalhes">
-        <article><span class="numero">01</span><h3>O dia</h3><p>19 de dezembro de 2026</p><p>Sábado · das 11h às 15h</p></article>
-        <article><span class="numero">02</span><h3>O encontro</h3><p>Espaço Tangerina</p><p>R. Aguapeí, 4037 · Chácaras Califórnia<br>Araçatuba — SP</p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o%20Tangerina%20Rua%20Aguape%C3%AD%204037%20Ara%C3%A7atuba%20SP" target="_blank" rel="noopener noreferrer">Como chegar ↗</a></article>
+        <article>
+          <span class="numero">01</span>
+
+          <h3>O dia</h3>
+
+          <p>19 de dezembro de 2026</p>
+          <p>Sábado · das 11h às 15h</p>
+        </article>
+
+        <article>
+          <span class="numero">02</span>
+
+          <h3>O encontro</h3>
+
+          <p>Espaço Tangerina</p>
+
+          <p>
+            R. Aguapeí, 4037 · Chácaras Califórnia<br>
+            Araçatuba — SP
+          </p>
+
+          <a
+            class="link"
+            href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o%20Tangerina%20Rua%20Aguape%C3%AD%204037%20Ara%C3%A7atuba%20SP"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Como chegar ↗
+          </a>
+        </article>
       </div>
     </section>
-    <section class="site" aria-labelledby="titulo-site">
+
+    <section
+      class="site"
+      id="site-casal"
+      aria-labelledby="titulo-site"
+      hidden
+    >
       <p class="sobretitulo">TUDO PREPARADO COM CARINHO</p>
+
       <h2 id="titulo-site">Nos vemos no grande dia?</h2>
-      <p>Em nosso site, você pode confirmar sua presença, conferir a lista de presentes e deixar um recadinho para nós.</p>
+
+      <p>
+        Em nosso site, você pode confirmar sua presença, conferir
+        a lista de presentes e deixar um recadinho para nós.
+      </p>
+
       <nav class="botoes" aria-label="Links do casamento">
-        <a class="botao principal" data-destino="presenca">Confirmar presença ↗</a>
-        <a class="botao" data-destino="presentes">Lista de presentes ↗</a>
-        <a class="botao" data-destino="recados">Deixar um recado ↗</a>
+        <a
+          class="botao principal"
+          data-destino="presenca"
+          href="https://noivos.casar.com/caliariheck/#/rsvp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Confirmar presença ↗
+        </a>
+
+        <a
+          class="botao"
+          data-destino="presentes"
+          href="https://noivos.casar.com/caliariheck/#/presentes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lista de presentes ↗
+        </a>
+
+        <a
+          class="botao"
+          data-destino="recados"
+          href="https://noivos.casar.com/caliariheck/#/recados"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Deixar um recado ↗
+        </a>
       </nav>
-      <a class="link site-completo" data-destino="site">Visitar nosso site completo ↗</a>
-      <p class="aviso" id="aviso" role="status" hidden>O endereço do site do casal será disponibilizado em breve.</p>
+
+      <a
+        class="link site-completo"
+        data-destino="site"
+        href="https://noivos.casar.com/caliariheck/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visitar nosso site completo ↗
+      </a>
+
+      <p class="aviso" id="aviso" role="status" hidden>
+        O endereço do site do casal será disponibilizado em breve.
+      </p>
     </section>
   </main>
-  <footer><p class="assinatura">Gabriela & Erif</p><p>19 de dezembro de 2026 · Araçatuba, SP</p></footer>
+
+  <footer id="rodape" hidden>
+    <p class="assinatura">Gabriela & Erif</p>
+    <p>19 de dezembro de 2026 · Araçatuba, SP</p>
+  </footer>
 </body>
 </html>
